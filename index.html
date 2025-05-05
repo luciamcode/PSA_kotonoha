@@ -52,6 +52,16 @@
       memo.value = '';
       localStorage.removeItem('psaContent');
     });
+
+function sendTo(url) {
+  const text = encodeURIComponent(document.getElementById('input').value);
+  window.open(`${url}?text=${text}`, '_blank');
+}
+
+
+
+
+
   </script>
 </body>
 </html>
